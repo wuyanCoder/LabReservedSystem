@@ -1,0 +1,180 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://xmlns.jcp.org/xml/ns/javaee" xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_3_1.xsd" id="WebApp_ID" version="3.1">
+  <display-name>LabReservedSystem</display-name>
+  <welcome-file-list>
+    <welcome-file>index.html</welcome-file>
+    <welcome-file>index.htm</welcome-file>
+    <welcome-file>index.jsp</welcome-file>
+    <welcome-file>default.html</welcome-file>
+    <welcome-file>default.htm</welcome-file>
+    <welcome-file>default.jsp</welcome-file>
+  </welcome-file-list>
+  <session-config>
+    <session-timeout>30</session-timeout>
+  </session-config>
+  <filter>
+    <filter-name>CharacterEncodingFilter</filter-name>
+    <filter-class>com.sean.filter.CharacterEncodingFilter</filter-class>
+    <init-param>
+      <param-name>encoding</param-name>
+      <param-value>UTF-8</param-value>
+    </init-param>
+  </filter>
+  <filter-mapping>
+    <filter-name>CharacterEncodingFilter</filter-name>
+    <url-pattern>/*</url-pattern>
+    <dispatcher>REQUEST</dispatcher>
+    <dispatcher>FORWARD</dispatcher>
+  </filter-mapping>
+  <display-name>LoginFilter</display-name>
+  <context-param>
+    <param-name>userSessonKey</param-name>
+    <param-value>USERSESSONKEY</param-value>
+  </context-param>
+  <context-param>
+    <param-name>rediretUrl</param-name>
+    <param-value>/index.jsp</param-value>
+  </context-param>
+  <context-param>
+    <param-name>uncheckedUrls</param-name>
+    <param-value>/Student/studentLogin.jsp</param-value>
+  </context-param>
+  <filter>
+    <filter-name>loginFilter</filter-name>
+    <filter-class>com.sean.filter.LoginFilter</filter-class>
+  </filter>
+  <filter-mapping>
+    <filter-name>loginFilter</filter-name>
+    <url-pattern>/Student/*</url-pattern>
+  </filter-mapping>
+
+
+  <servlet>
+    <servlet-name>StudentServlet</servlet-name>
+    <servlet-class>com.sean.servlet.StudentServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>StudentServlet</servlet-name>
+    <url-pattern>/StudentServlet</url-pattern>
+  </servlet-mapping>
+  
+   
+  <servlet>
+    <servlet-name>StudentInsertServlet</servlet-name>
+    <servlet-class>com.sean.servlet.StudentInsertServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>StudentInsertServlet</servlet-name>
+    <url-pattern>/StudentInsertServlet</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+    <servlet-name>StudentDeleteServlet</servlet-name>
+    <servlet-class>com.sean.servlet.StudentDeleteServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>StudentDeleteServlet</servlet-name>
+    <url-pattern>/StudentDeleteServlet</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+    <servlet-name>StudentSelectServlet</servlet-name>
+    <servlet-class>com.sean.servlet.StudentSelectServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>StudentSelectServlet</servlet-name>
+    <url-pattern>/StudentSelectServlet</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+    <servlet-name>StudentUpdateServlet</servlet-name>
+    <servlet-class>com.sean.servlet.StudentUpdateServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>StudentUpdateServlet</servlet-name>
+    <url-pattern>/StudentUpdateServlet</url-pattern>
+  </servlet-mapping>
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  <servlet>
+    <servlet-name>TeacherServlet</servlet-name>
+    <servlet-class>com.sean.servlet.TeacherServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>TeacherServlet</servlet-name>
+    <url-pattern>/TeacherServlet</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <servlet-name>TeacherUpdateServlet</servlet-name>
+    <servlet-class>com.sean.servlet.TeacherUpdateServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>TeacherUpdateServlet</servlet-name>
+    <url-pattern>/TeacherUpdateServlet</url-pattern>
+  </servlet-mapping>
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  <servlet>
+    <servlet-name>NotificationServlet</servlet-name>
+    <servlet-class>com.sean.servlet.NotificationServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>NotificationServlet</servlet-name>
+    <url-pattern>/NotificationServlet</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <servlet-name>ExpCourseServlet</servlet-name>
+    <servlet-class>com.sean.servlet.ExpCourseServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>ExpCourseServlet</servlet-name>
+    <url-pattern>/ExpCourseServlet</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <servlet-name>ErrorServlet</servlet-name>
+    <servlet-class>com.sean.servlet.ErrorServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>ErrorServlet</servlet-name>
+    <url-pattern>/ErrorServlet</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <servlet-name>ExpRoomServlet</servlet-name>
+    <servlet-class>com.sean.servlet.ExpRoomServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>ExpRoomServlet</servlet-name>
+    <url-pattern>/ExpRoomServlet</url-pattern>
+  </servlet-mapping>
+</web-app>

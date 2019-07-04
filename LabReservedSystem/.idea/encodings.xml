@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="Encoding" addBOMForNewFiles="with NO BOM">
+    <file url="file://$PROJECT_DIR$/src/com/sean/dao/AdministratorDao.java" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/src/com/sean/dao/ExpCourseDao.java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/src/com/sean/dao/ExpRoomDao.java" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/src/com/sean/dao/NotificationDao.java" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/src/com/sean/dao/StudentDao.java" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/src/com/sean/filter/CharacterEncodingFilter.java" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/src/com/sean/filter/LoginFilter.java" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/src/com/sean/model/Administrator.java" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/src/com/sean/model/ExpCourse.java" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/src/com/sean/model/Student.java" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/src/com/sean/servlet/AdministratorServlet.java" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/src/com/sean/servlet/ErrorServlet.java" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/src/com/sean/servlet/ExpCourseServlet.java" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/src/com/sean/servlet/ExpRoomDeleteServlet.java" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/src/com/sean/servlet/ExpRoomInsertServlet.java" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/src/com/sean/servlet/ExpRoomSelectServlet.java" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/src/com/sean/servlet/ExpRoomServlet.java" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/src/com/sean/servlet/NotificationInsertServlet.java" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/src/com/sean/servlet/NotificationSelectServlet.java" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/src/com/sean/servlet/StudentServlet.java" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/src/com/sean/servlet/TeacherDeleteServlet.java" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/src/com/sean/servlet/TeacherSelectServlet.java" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/src/com/sean/servlet/TeacherServlet.java" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/src/com/sean/tools/DateTest.java" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/src/com/sean/tools/GetIPv6Address.java" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/src/com/sean/tools/MyPagination.java" charset="GBK" />
+  </component>
+</project>
